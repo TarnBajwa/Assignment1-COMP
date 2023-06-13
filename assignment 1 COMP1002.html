@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizza Order Form</title>
+</head>
+<body>
+  <!-- Page header -->
+  <header>
+    <h1>Welcome to our Pizza Ordering Service</h1>
+    <p>Fill out the form below to place your order.</p>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <!-- Pizza order form -->
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Other personal information fields -->
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Pizza Details</legend>
+        <label for="quantity">Number of Pizzas:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+
+        <label for="delivery-date">Delivery Date:</label>
+        <input type="date" id="delivery-date" name="delivery-date" required>
+    
+        <label for="pizza-type">Pizza Type:</label>
+        <select id="pizza-type" name="pizza-type">
+        <optgroup label="Vegetarian">
+        <option value="veggie-supreme">Veggie Supreme</option>
+        <option value="margherita">Margherita</option>
+        </optgroup>
+        <optgroup label="Non-Vegetarian">
+        <option value="pepperoni">Pepperoni</option>
+        <option value="bbq-chicken">BBQ Chicken</option>
+        </optgroup>
+      </select>
+    
+        <label for="color-preference">Color Preference:</label>
+        <input type="color" id="color-preference" name="color-preference">
+    
+        <label for="quantity-range">Quantity Range:</label>
+        <input type="range" id="quantity-range" name="quantity-range" min="0" max="100">
+    
+        <label for="progress">Progress:</label>
+        <progress id="progress" name="progress" value="50" max="100"></progress>
+    
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+      </fieldset>
+  
+  <input type="submit" value="Place Order">
+  <input type="reset" value="Reset">
+
+        <label for="size">Size:</label>
+        <select id="size" name="size">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+
+        <label for="shape">Shape:</label>
+        <input type="radio" id="round" name="shape" value="round" checked>
+        <label for="round">Round</label>
+        <input type="radio" id="square" name="shape" value="square">
+        <label for="square">Square</label>
+        <br>
+        <label for="toppings">Toppings:</label>
+        <select id="toppings" name="toppings" multiple>
+          <option value="cheese">Cheese</option>
+          <option value="pepperoni">Pepperoni</option>
+          <option value="mushrooms">Mushrooms</option>
+          <option value="onions">Onions</option>
+          <option value="bell-peppers">Bell Peppers</option>
+        </select>
+
+
+        <label for="crust">Crust Type:</label>
+        <select id="crust" name="crust">
+          <option value="deep-dish">Deep Dish</option>
+          <option value="thin-crust">Thin Crust</option>
+          <option value="regular">Regular</option>
+        </select>
+
+        <label for="delivery-method">Delivery Method:</label>
+        <input type="radio" id="takeout" name="delivery-method" value="takeout" checked>
+        <label for="takeout">Takeout</label>
+        <input type="radio" id="delivery" name="delivery-method" value="delivery">
+        <label for="delivery">Delivery</label>
+        <input type="radio" id="eat-in" name="delivery-method" value="eat-in">
+        <label for="eat-in">Eat-in</label>
+
+        <!-- Other pizza details fields -->
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Comments</legend>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+      </fieldset>
+
+      <input type="submit" value="Place Order">
+      <input type="reset" value="Reset">
+    </form>
+  </main>
+
+  <!-- Page footer -->
+  <footer>
+    <p>&copy; 2023 Pizza Delivery Service. All rights reserved.</p>
+  </footer>
+
+  <!-- Image element with alt attribute and appropriate image file format -->
+  <p>
+    <img src="file:///C:/Users/taran/Downloads/pexels-rene-strgar-16994473.jpg" alt="Delicious pizza" width="500" height="600">
+  </p>
+</body>
+</html>
